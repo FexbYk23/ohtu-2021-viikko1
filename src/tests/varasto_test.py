@@ -65,9 +65,8 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(v.paljonko_mahtuu(), 0, 0)
 
     def test_init_negatiivinen_tilavuus(self):
-        v = Varasto(-6)
+        v = Varasto(-6, -10)
         self.assertAlmostEqual(v.paljonko_mahtuu(), 0, 0)
-
 
     def test_str(self):
         self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
