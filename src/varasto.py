@@ -1,5 +1,10 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
+        
+        if tilavuus > 10:
+            if tilavuus > 100:
+                if tilavuus > 200:
+                    print("moi")
 
         self.tilavuus = max(tilavuus, 0)
         if alku_saldo < 0.0:
